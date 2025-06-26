@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime
 
 def is_available_date(booked_dates, date_for_booking):
     pattern = '%d.%m.%Y'
