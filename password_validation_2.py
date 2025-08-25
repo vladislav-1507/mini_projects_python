@@ -1,6 +1,8 @@
 from string import ascii_lowercase, ascii_uppercase, digits
 
 def verification(login, password, success, failure):
+    '''проверяет пароль на наличие заглавных, строчных
+    символов и цифр'''
     upper_flag, lower_flag, digit_flag = False, False, False
     message1 = 'в пароле нет ни одной буквы'
     message2 = 'в пароле нет ни одной заглавной буквы'
@@ -33,3 +35,5 @@ def failure(login, text):
     print(f'{login}, попробуйте снова. Текст ошибки: {text}')
 
 verification('Arthur_Davletov', 'HELLO_WORLD', success, failure)
+
+print(verification.__name__, verification.__doc__, verification.__defaults__, sep='\n')
